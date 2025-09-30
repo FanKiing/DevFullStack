@@ -1,0 +1,10 @@
+1. récuperer la liste des produits d'un api distant (useEffect)
+2. chaque produit est caractérisé par : id, name, price, image
+3. définir le provider avec les ressources à partager 
+4.au niveau de app .js , définir la liste des children de provider qui vont
+  consommer les ressources partagées
+5. Définir le code source de chaque composant et comment il va partager ces ressources
+Liste des composants children :
+  1. Liste Produit : pour afficher et supprimer
+  2. Form Produit pour ajouter et modifier
+6. importer App.js dans index.js pour tester 
