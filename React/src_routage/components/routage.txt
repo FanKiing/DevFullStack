@@ -1,0 +1,9 @@
+1. installer react-router-dom
+2. créer les composants (Navbar,ProductList,ProductForm) sans code source
+3. Définir ProductContext (Provider)
+5. définir la liste des routes  (les fils ) du provider =>associer a chaque composant un path 
+6. code source navbar 
+7. ProductList code (Link => react-router-dom)
+8. ProductForm => travailler la version add => aprés ajout => rediriger user vers listProduct (useNavigate)
+               => travailler la version => useParams to get id from url 
+                                           useNavigate(navigate) redirect user to ListProduct component
