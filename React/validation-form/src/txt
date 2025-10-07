@@ -1,0 +1,49 @@
+import { useState } from "react";
+import ProductForm from "./ProductForm";
+import ProductList from "./ProductList";
+
+function App() {
+  const [products, setProducts] = useState([]);
+  const [editingProduct, setEditingProduct] = useState(null);
+
+  // Ajouter un produit
+  const addProduct = (product) => {
+    setProducts([...products, { ...product, id: Date.now() }]);
+  };
+
+  // Supprimer un produit
+  const deleteProduct = (id) => {
+    setProducts(products.filter((p) => p.id !== id));
+  };
+
+  // Préparer un produit pour l'édition
+  const editProduct = (product) => {
+    setEditingProduct(product);
+  };
+
+  // Mettre à jour un produit
+  const updateProduct = (updatedProduct) => {
+    setProducts(
+      products.map((p) => (p.id === updatedProduct.id ? updatedProduct : p))
+    );
+    setEditingProduct(null);
+  };
+
+  return (
+    <div className="container mt-4">
+      <h2 className="text-center mb-4">CRUD React - Produits</h2>
+      <ProductForm
+        addProduct={addProduct}
+        editingProduct={editingProduct}
+        updateProduct={updateProduct}
+      />
+      <ProductList
+        products={products}
+        deleteProduct={deleteProduct}
+        editProduct={editProduct}
+      />
+    </div>
+  );
+}
+
+export default App;
