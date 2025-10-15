@@ -1,0 +1,47 @@
+class Utilisateur {
+  - idUtilisateur
+  - nom
+  - prénom
+  - email
+  - motDePasse
+  + consulterCatalogue()
+  + sInscrire()
+}
+
+class Client {
+  - idClient
+  - adresseLivraison
+  + passerCommande()
+  + annulerCommande()
+  + laisserAvis()
+}
+
+class Produit {
+  - idProduit
+  - nom
+  - description
+  - prix
+  - quantiteEnStock
+}
+
+class Commande {
+  - idCommande
+  - dateCommande
+  - statut
+  + calculerTotal()
+}
+
+class Avis {
+  - idAvis
+  - commentaire
+  - note
+}
+
+// Relations :
+Utilisateur ◄─── Client (héritage)
+Client ────────○ Commande (1..*)
+Commande ─────○ LigneCommande (1..*)
+LigneCommande ──── Produit
+Client ────────○ Avis (1..*)
+Avis ──────────── Produit
+
