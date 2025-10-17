@@ -1,0 +1,39 @@
+[*] --> Créé
+
+Créé --> En préparation : commandeValidée
+
+En préparation --> Prêt à expédier : colisPrêt
+
+Prêt à expédier --> En transit : expédierColis
+
+En transit --> En livraison : arrivéEnLocal
+
+En livraison --> Livré : livraisonReussie
+
+    
+Créé --> Annulé : annulation
+
+En préparation --> Annulé : annulation
+
+Prêt à expédier --> Annulé : annulation
+    
+En livraison --> Retourné : retourDemandé
+
+Livré --> Retourné : retourDemandé
+
+    
+En transit --> Perdu : colisPerdu
+
+En livraison --> Perdu : colisPerdu
+
+    
+Livré --> [*]
+
+Annulé --> [*]
+
+Retourné --> [*]
+
+Perdu --> [*]
+
+
+
