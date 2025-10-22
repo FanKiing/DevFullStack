@@ -1,3 +1,6 @@
+Q4:
+
+
 [*] --> Créé
 
 Créé --> En préparation : commandeValidée
@@ -34,6 +37,9 @@ Annulé --> [*]
 Retourné --> [*]
 
 Perdu --> [*]
+
+
+Q1:
 
 
 

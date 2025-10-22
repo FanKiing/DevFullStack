@@ -1,0 +1,13 @@
+id,nom,quantite_stock,prix_unitaire
+1,Pizza Margherita,18,45.0
+2,Pizza Pepperoni,12,52.0
+3,Pasta Alfredo,25,48.0
+4,Pasta Bolognese,22,50.0
+5,Salade Cesar,30,35.0
+6,Burger Classic,20,40.0
+7,Burger Cheese,16,42.0
+8,Soupe Tomate,28,22.0
+9,Steak Grill,10,85.0
+10,Fish Chips,14,55.0
+11,Tiramisu,18,30.0
+12,Cheesecake,15,32.0
