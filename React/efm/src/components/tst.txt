@@ -1,0 +1,97 @@
+import React, { useState, useEffect } from 'react';
+import { useVeloStore } from './VeloContext';
+
+const ListeBatteries = () => {
+  const { store } = useVeloStore();
+  const [selectedStatus, setSelectedStatus] = useState('En Stock');
+  const [filteredBatteries, setFilteredBatteries] = useState([]);
+
+  // Use the effect hook to filter the list when 'selectedStatus' or 'store.Batteries' changes
+  useEffect(() => {
+    // Check if the selected status is valid before filtering
+    if (store.StatutBatterie.includes(selectedStatus)) {
+      const filtered = store.Batteries.filter(b => b.statut === selectedStatus);
+      setFilteredBatteries(filtered);
+    } else {
+      setFilteredBatteries(store.Batteries); // Fallback or show all if status is not valid
+    }
+  }, [selectedStatus, store.Batteries, store.StatutBatterie]);
+
+  const handleFilterChange = (e) => {
+    setSelectedStatus(e.target.value);
+  };
+
+  const calculateAverageCycles = () => {
+    if (filteredBatteries.length === 0) {
+      return 0;
+    }
+    const totalCycles = filteredBatteries.reduce((sum, bat) => sum + bat.nombre_cycles, 0);
+    return Math.round(totalCycles / filteredBatteries.length);
+  };
+
+  const totalTrouvees = filteredBatteries.length;
+  const moyenneCycles = calculateAverageCycles();
+
+  return (
+    <div style={styles.container}>
+      [cite_start]<h2>Liste Batteries [cite: 50]</h2>
+
+      {/* Filter section */}
+      <div style={styles.filterSection}>
+        [cite_start]<label>Choisir le Statut de la Batterie: [cite: 51]</label>
+        <select
+          value={selectedStatus}
+          onChange={handleFilterChange}
+          [cite_start]// The dropdown data is read from the store (StatutBatterie) [cite: 56]
+        >
+          {store.StatutBatterie.map(status => (
+            <option key={status} value={status}>
+              {status}
+            </option>
+          ))}
+        </select>
+        [cite_start]{/* The prompt implies filtering happens after clicking 'Filtrer'[cite: 57], 
+            but a common modern approach is instant filtering on select change. 
+            The current implementation uses instant filtering on select change for better UX. */}
+        <button onClick={() => { /* No action needed as filtering is automatic on select change */ }}>Filtrer</button>
+      </div>
+
+      {/* Table of Batteries */}
+      <table style={styles.table}>
+        <thead>
+          <tr>
+            [cite_start]<th>Id [cite: 52]</th>
+            [cite_start]<th>Numero Serie [cite: 52]</th>
+            [cite_start]<th>Statut [cite: 52]</th>
+            [cite_start]<th>Nombre Cycles [cite: 52]</th>
+          </tr>
+        </thead>
+        <tbody>
+          {filteredBatteries.map(bat => (
+            <tr key={bat.Id}>
+              <td>{bat.Id}</td>
+              <td>{bat.Numero_serie}</td>
+              <td>{bat.statut}</td>
+              <td>{bat.nombre_cycles}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+
+      {/* Summary Statistics */}
+      [cite_start]<p><strong>{totalTrouvees}</strong> batteries Trouvées [cite: 53]</p>
+      [cite_start]<p>La moyenne des nombres de cycles est <strong>{moyenneCycles}</strong> [cite: 54]</p>
+    </div>
+  );
+};
+
+// Basic styling for illustration
+const styles = {
+    container: { border: '1px solid #ccc', padding: '15px', maxWidth: '600px', margin: '20px auto' },
+    filterSection: { marginBottom: '20px' },
+    table: { width: '100%', borderCollapse: 'collapse' },
+    th: { border: '1px solid #ddd', padding: '8px', backgroundColor: '#f2f2f2' },
+    td: { border: '1px solid #ddd', padding: '8px' },
+};
+
+export default ListeBatteries;
