@@ -1,10 +1,9 @@
-import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import CaloriesCalc from "./components/CaloriesCalc";
+import CaloriesCalc from "./components/NutriMeal";
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <CaloriesCalc />
     </div>
   );
