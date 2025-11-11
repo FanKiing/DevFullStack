@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "nom": "TV Samsung 55 pouces 4K",
+    "prix": 6500,
+    "categorie": "TV",
+    "image": "https://images.samsung.com/is/image/samsung/p6pim/n_africa/ua55du7000uxmv/gallery/n-africa-crystal-uhd-du7000-ua55du7000uxmv-540571944",
+    "description": "TV UHD 4K avec HDR, Smart TV",
+    "stock": 10
+  },
+  {
+    "id": 2,
+    "nom": "Machine à laver LG 7Kg",
+    "prix": 3990,
+    "categorie": "Lave-linge",
+    "image": "https://media.electroplanet.ma/media/catalog/product/cache/fe7218fa206f7a550a07f49b9ea052d6/2/9/2911179.jpg",
+    "description": "Classe A+++, moteur DirectDrive",
+    "stock": 5
+  },
+  {
+    "id": 3,
+    "nom": "Réfrigérateur Samsung 400L",
+    "prix": 4990,
+    "categorie": "Réfrigérateur",
+    "image": "https://www.koktahome.com/wp-content/uploads/2024/09/refrigerateur-samsung-rt40-twin-cooling-plus-400l-silver-rt40k5100s8-1.png",
+    "description": "No Frost, Inverter, Classe A++",
+    "stock": 7
+  },
+  {
+    "id": 4,
+    "nom": "Laptop HP Core i5 10th Gen",
+    "prix": 7490,
+    "categorie": "Ordinateur Portable",
+    "image": "https://media.ldlc.com/bo/images/fiches/pc_portables/hp/elitebook_840_g7/hp_elitebook_840_g7_14p_001.jpg",
+    "description": "8GB RAM, SSD 512GB, Windows 11",
+    "stock": 8
+  },
+  {
+    "id": 5,
+    "nom": "iPhone 17 Pro Max",
+    "prix": 8990,
+    "categorie": "Smartphone",
+    "image": "https://uno.ma/pub/media/catalog/product/cache/af8d7fd2c4634f9c922fba76a4a30c04/i/p/ip17pro-max-o-.jpg",
+    "description": "Écran OLED, 5G, A15 Bionic",
+    "stock": 4
+  },
+  {
+    "id": 6,
+    "nom": "Micro-ondes Moulinex 34L",
+    "prix": 1190,
+    "categorie": "Micro-ondes",
+    "image": "https://medias4.ubaldi.com/visuels/6254444/pr_MA21CA3MICRCGWGE-dab2a21bb6-43.jpg",
+    "description": "Grill intégré, 1000W",
+    "stock": 12
+  },
+  {
+    "id": 7,
+    "nom": "Aspirateur Philips 1900W",
+    "prix": 890,
+    "categorie": "Aspirateur",
+    "image": "https://images.philips.com/is/image/philipsconsumer/vrs_ba2e6b485c5dfdecea9a02ddad38675aed191613?$pnglarge$&wid=1250",
+    "description": "Filtre HEPA, design compact",
+    "stock": 9
+  },
+  {
+    "id": 8,
+    "nom": "TV LG OLED 65 pouces 4K",
+    "prix": 14500,
+    "categorie": "TV",
+    "image": "https://imagedelivery.net/AZ5kNEcp8roCR6XQJU10qQ/76acf71b-ecd4-495b-9028-bba31bda8100/w=9999",
+    "description": "OLED, Dolby Vision, WebOS",
+    "stock": 3
+  },
+  {
+    "id": 9,
+    "nom": "PlayStation 5",
+    "prix": 7990,
+    "categorie": "Console",
+    "image": "https://i5.walmartimages.com/seo/Sony-PlayStation-5-Video-Game-Console-Ps5-Disc-Console-Japanese-Edition-New_1536c1c9-0c26-4ce6-a5e1-1825ca064d05.1434e86832a815bb366d12b0a854390d.jpeg",
+    "description": "Edition Standard, 825GB SSD",
+    "stock": 6
+  },
+  {
+    "id": 10,
+    "nom": "Casque Bluetooth Sony WH-1000XM4",
+    "prix": 2490,
+    "categorie": "Audio",
+    "image": "https://www.sony.com/image/5d02da5df552836db894cead8a68f5f3?fmt=pjpeg&wid=330&bgcolor=FFFFFF&bgc=FFFFFF",
+    "description": "Réduction de bruit active, 30h autonomie",
+    "stock": 15
+  },
+  {
+    "id": 11,
+    "nom": "Climatiseur Hisense 12000 BTU",
+    "prix": 3290,
+    "categorie": "Climatiseur",
+    "image": "https://climamarket.com/cdn/shop/files/7e2193c53dc9f974bc239e133cb6b60c_ff4b6f30-4758-4498-9381-b5ed371092e8.jpg?v=1762419301",
+    "description": "Inverter, consomme moins d’énergie",
+    "stock": 5
+  },
+  {
+    "id": 12,
+    "nom": "Samsung Galaxy S25 Ultra",
+    "prix": 2790,
+    "categorie": "Smartphone",
+    "image": "https://media.very.co.uk/i/very/WFKB3_SQ1_0000017815_TITANIUM_GREY_SLf?$pdp_300x400_x2$&fmt=jpg",
+    "description": "Écran Super AMOLED, 5000mAh",
+    "stock": 11
+  }
+]
