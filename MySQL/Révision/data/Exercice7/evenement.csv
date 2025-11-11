@@ -1,0 +1,11 @@
+id,theme,date_debut,date_fin,description,cout_journalier,expert_id
+1,Marketing,2025-03-05,2025-03-08,Programme avance,300,4
+2,Gestion,2025-03-27,2025-03-30,Programme avance,300,3
+3,Gestion,2025-03-28,2025-03-29,Programme avance,400,5
+4,DevOps,2025-04-18,2025-04-20,Programme avance,300,6
+5,Gestion,2025-03-22,2025-03-23,Programme avance,600,2
+6,Gestion,2025-03-23,2025-03-25,Programme avance,400,2
+7,Gestion,2025-03-16,2025-03-18,Programme avance,600,2
+8,Gestion,2025-03-13,2025-03-14,Programme avance,300,2
+9,Cloud,2025-03-26,2025-03-27,Programme avance,400,9
+10,Cyber,2025-03-23,2025-03-24,Programme avance,400,6

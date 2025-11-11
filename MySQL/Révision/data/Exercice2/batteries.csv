@@ -1,0 +1,11 @@
+id,numero_serie,capacite,sante_batterie,nombre_cycles,statut
+1,BAT-2025-00001,18000,78,221,Retire
+2,BAT-2024-00002,12000,89,604,En_Utilisation
+3,BAT-2025-00003,13500,95,278,Retire
+4,BAT-2024-00004,12000,70,460,En_Utilisation
+5,BAT-2025-00005,12000,67,580,En_Utilisation
+6,BAT-2024-00006,10000,56,336,En_Utilisation
+7,BAT-2025-00007,12000,99,669,En_Utilisation
+8,BAT-2024-00008,15000,77,423,En_Utilisation
+9,BAT-2025-00009,10000,69,531,En_Utilisation
+10,BAT-2024-00010,12000,85,689,En_Utilisation

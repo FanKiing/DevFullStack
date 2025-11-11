@@ -1,0 +1,109 @@
+.course-detail-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: calc(var(--spacing) * 4);
+}
+
+.course-content {
+  background-color: white;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.course-header {
+  display: flex;
+  gap: calc(var(--spacing) * 4);
+  padding: calc(var(--spacing) * 4);
+  border-bottom: 1px solid var(--neutral-200);
+}
+
+.course-thumbnail {
+  width: 280px;
+  height: 280px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: var(--border-radius);
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.course-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 3);
+}
+
+.course-meta h1 {
+  font-size: 32px;
+  color: var(--neutral-900);
+  font-weight: 600;
+}
+
+.course-meta p {
+  color: var(--neutral-700);
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+.btn-primary {
+  background-color: var(--neutral-900);
+  color: white;
+  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 5);
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.btn-primary:hover {
+  background-color: var(--neutral-700);
+}
+
+.syllabus-section {
+  padding: calc(var(--spacing) * 4);
+}
+
+.syllabus-section h2 {
+  font-size: 24px;
+  margin-bottom: calc(var(--spacing) * 3);
+  color: var(--neutral-900);
+  font-weight: 600;
+}
+
+.syllabus-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing) * 2);
+}
+
+.syllabus-list li {
+  padding: calc(var(--spacing) * 2.5) calc(var(--spacing) * 3);
+  background-color: var(--neutral-100);
+  border-radius: 8px;
+  color: var(--neutral-700);
+  font-size: 15px;
+  transition: background-color 0.2s ease;
+}
+
+.syllabus-list li:hover {
+  background-color: var(--neutral-200);
+}
+
+@media (max-width: 768px) {
+  .course-header {
+    flex-direction: column;
+  }
+
+  .course-thumbnail {
+    width: 100%;
+    height: 200px;
+  }
+}

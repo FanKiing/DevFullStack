@@ -1,0 +1,50 @@
+CREATE TABLE table1(code INT PRIMARY KEY);
+
+DELIMITER $$
+
+CREATE PROCEDURE test()
+BEGIN
+
+DECLARE CONTINUE HANDLER FOR SQLSTATE '23000'
+SET @x = 1;
+
+SET @x = 1;
+INSERT INTO table1 VALUES (1);
+
+SET @x = 2;
+INSERT INTO table1 VALUES (1);
+
+SET @x = 3;
+
+END $$
+
+DELIMITER ;
+
+CALL test();
+SELECT @x;
+
+
+
+CREATE TABLE table1(code INT PRIMARY KEY);
+
+DELIMITER $$
+
+CREATE PROCEDURE test()
+BEGIN
+    DECLARE EXIT HANDLER FOR 1062
+    SET @x = 1;
+
+    SET @x = 1;
+    INSERT INTO table1 VALUES (1);
+
+    SET @x = 2;
+    INSERT INTO table1 VALUES (1);
+
+    SET @x = 3;
+END $$
+
+DELIMITER ;
+
+CALL test();
+SELECT @x;
+

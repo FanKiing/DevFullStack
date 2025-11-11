@@ -1,0 +1,32 @@
+﻿* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #0066CC;
+  --secondary: #00A676;
+  --neutral-100: #F5F5F5;
+  --neutral-200: #E0E0E0;
+  --neutral-300: #BDBDBD;
+  --neutral-700: #616161;
+  --neutral-900: #212121;
+  --spacing: 8px;
+}
+
+body {
+  font-family: 'Inter', 'Roboto', sans-serif;
+  color: var(--neutral-900);
+  background-color: #FAFAFA;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+button:focus, input:focus, a:focus {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}

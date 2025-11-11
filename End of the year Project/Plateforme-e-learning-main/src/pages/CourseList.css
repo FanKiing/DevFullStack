@@ -1,0 +1,65 @@
+.course-list-page {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: calc(var(--spacing) * 4);
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: calc(var(--spacing) * 4);
+}
+
+.page-header h1 {
+  font-size: 28px;
+  color: var(--neutral-900);
+  font-weight: 600;
+}
+
+.header-actions {
+  display: flex;
+  gap: calc(var(--spacing) * 2);
+  align-items: center;
+}
+
+.search-bar {
+  display: flex;
+  gap: calc(var(--spacing) * 1);
+  background-color: white;
+  border-radius: 8px;
+  padding: calc(var(--spacing) * 0.5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.search-bar input {
+  padding: calc(var(--spacing) * 1.5) calc(var(--spacing) * 2);
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-family: inherit;
+  min-width: 250px;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.search-btn {
+  padding: calc(var(--spacing) * 1.5) calc(var(--spacing) * 2);
+  background-color: var(--neutral-900);
+  color: white;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.search-btn:hover {
+  background-color: var(--neutral-700);
+}
+
+.courses-grid-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: calc(var(--spacing) * 3);
+}

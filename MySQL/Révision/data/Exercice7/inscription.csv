@@ -1,0 +1,31 @@
+id,dateInscription,statutInscription,participant_id,evenement_id
+1,2025-04-11,Refusee,20,6
+2,2025-04-01,En attente,11,8
+3,2025-06-16,En attente,3,3
+4,2025-02-20,Validee,2,2
+5,2025-02-07,Refusee,4,1
+6,2025-04-28,En attente,11,9
+7,2025-06-08,Validee,11,9
+8,2025-06-24,Validee,12,7
+9,2025-02-17,En attente,7,4
+10,2025-02-28,En attente,12,6
+11,2025-03-04,Validee,2,7
+12,2025-01-21,Validee,17,5
+13,2025-04-02,En attente,3,5
+14,2025-01-03,En attente,19,8
+15,2025-05-20,En attente,1,8
+16,2025-01-27,Refusee,5,5
+17,2025-05-01,Validee,10,8
+18,2025-06-03,Refusee,3,4
+19,2025-06-05,Validee,20,10
+20,2025-04-26,En attente,12,5
+21,2025-05-14,Validee,14,10
+22,2025-04-25,En attente,5,7
+23,2025-04-28,En attente,3,4
+24,2025-05-16,En attente,11,7
+25,2025-02-10,Refusee,11,1
+26,2025-02-23,En attente,20,1
+27,2025-01-14,En attente,5,6
+28,2025-04-04,Refusee,9,5
+29,2025-05-22,Validee,12,2
+30,2025-06-06,Validee,13,6

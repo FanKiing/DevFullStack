@@ -1,0 +1,109 @@
+.homepage {
+  width: 100%;
+}
+
+.hero-section {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: calc(var(--spacing) * 10) calc(var(--spacing) * 6);
+  margin-bottom: calc(var(--spacing) * 6);
+  text-align: center;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><text x="50%" y="50%" font-size="120" fill="rgba(255,255,255,0.1)" text-anchor="middle" dominant-baseline="middle">ONLINE COURSES</text></svg>');
+  background-size: cover;
+  background-position: center;
+  opacity: 0.3;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-section h1 {
+  font-size: 56px;
+  margin-bottom: calc(var(--spacing) * 2);
+  font-weight: 600;
+}
+
+.hero-section p {
+  font-size: 20px;
+  opacity: 0.95;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.homepage-content {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 calc(var(--spacing) * 6);
+}
+
+.search-section {
+  margin-bottom: calc(var(--spacing) * 6);
+}
+
+.search-bar {
+  display: flex;
+  gap: calc(var(--spacing) * 1);
+  width: 100%;
+  background-color: white;
+  border-radius: 8px;
+  padding: calc(var(--spacing) * 0.5);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.search-bar input {
+  flex: 1;
+  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 3);
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-family: inherit;
+}
+
+.search-bar input:focus {
+  outline: none;
+}
+
+.search-btn {
+  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 6);
+  background-color: var(--neutral-900);
+  color: white;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.search-btn:hover {
+  background-color: var(--neutral-700);
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: calc(var(--spacing) * 4);
+  margin-bottom: calc(var(--spacing) * 6);
+}
+
+@media (max-width: 1024px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-section h1 {
+    font-size: 42px;
+  }
+}

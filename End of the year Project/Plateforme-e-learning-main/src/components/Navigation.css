@@ -1,0 +1,82 @@
+.navigation {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: calc(var(--spacing) * 2) calc(var(--spacing) * 4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--spacing) * 1);
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--neutral-900);
+}
+
+.nav-links {
+  display: flex;
+  gap: calc(var(--spacing) * 4);
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--neutral-700);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  padding: calc(var(--spacing) * 1) calc(var(--spacing) * 2);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--primary);
+}
+
+.nav-link:focus-visible {
+  outline: 3px solid var(--primary);
+  outline-offset: 2px;
+}
+
+.nav-buttons {
+  display: flex;
+  gap: calc(var(--spacing) * 2);
+}
+
+.btn-nav {
+  padding: calc(var(--spacing) * 1.5) calc(var(--spacing) * 3);
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.btn-signin {
+  background-color: white;
+  color: var(--neutral-700);
+  border: 1px solid var(--neutral-300);
+}
+
+.btn-signin:hover {
+  background-color: var(--neutral-100);
+}
+
+.btn-signup {
+  background-color: var(--neutral-900);
+  color: white;
+}
+
+.btn-signup:hover {
+  background-color: var(--neutral-700);
+}
